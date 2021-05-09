@@ -10,16 +10,14 @@ There are many great examples out there, why not build a [BattleSnake](https://d
 
 Tello is a registered trademark of Ryze Tech.  The author of this package is in no way affiliated with Ryze, DJI, or Intel.  
 
-The package has been developed by gathering together information from a variety of sources on the Internet (especially https://tellopilots.com) and by examining data packets sent to/from the Tello.  The package will probably be extended as more knowledge of the drone's protocol is obtained.
+The package has been developed by gathering together information from a variety of sources on the Internet;
 
-Use this package at your own risk.  The author(s) is/are in no way responsible for any damage caused either to or by the drone when using this software.
-
+Use this package at your own risk!!!  The author(s) is/are in no way responsible for any damage caused either to or by the drone when using this software.
+NEVER FLY NEAR PEOPLE, ANIMALS OR ANY OTHER OBJECTS. Use a clear space! Watch your head ;-)
 
 Big shout out to [SMerrony](https://godoc.org/github.com/SMerrony)! for (https://godoc.org/github.com/SMerrony/tello)[tello] & (https://godoc.org/github.com/SMerrony/telloterm)[telloterm]!!!
 
 See [Tello Lib ImplementationChart.md](https://github.com/SMerrony/tello/blob/master/ImplementationChart.md) for full details of what functions are currently implemented.
-
-
 
 ## What do you need?
 
@@ -34,6 +32,15 @@ Optional (but fun)
 
 
 ### Tello term
+
+#### Install
+```
+go get github.com/SMerrony/telloterm
+```
+If you wish to use the video window you must have mplayer installed and on your PATH.
+
+#### Run
+
 ```
 $ telloterm -h
 Usage of C:\Users\jstolp\go\bin\telloterm.exe:
@@ -62,7 +69,7 @@ $ telloterm -jsid 1
 
   -jslist
         List attached joysticks
-        
+
 Joystick ID: 0: Name: Microsoft PC-joystick driver, Axes: 5, Buttons: 4 (TrustMaster joystick)
 Joystick ID: 1: Name: Microsoft PC-joystick driver, Axes: 8, Buttons: 14 (DualShock PS4 controller)
 
