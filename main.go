@@ -16,7 +16,7 @@ func ctrlMssgLn(message string) {
 }
 
 func main() {
-	log.Printf("Trying to connect... to PH-JSX-TB-Tello1")
+	log.Printf("Try Connection To Tello %v", "PH-JSX-T1 Ultra-Light")
 	drone := new(tello.Tello)
 	err := drone.ControlConnectDefault()
 	if err != nil {
@@ -24,7 +24,11 @@ func main() {
 	}
 
 	flying := false
+
 	ctrlMssgLn("Connected with Drone.")
+
+	log.Printf("CONNECTED TO:  %v", "PH-JSX-T1 Ultra-Light")
+	fmt.Println("I made connection with the Drone")
 	fmt.Printf("[CTRL] %v Percent BATTERY, Checking... \n", drone.GetFlightData().BatteryPercentage)
 	time.Sleep(5 * time.Second)
 	//fmt.Printf("SSID: %s\n", drone.GetFlightData().SSID)
@@ -59,8 +63,10 @@ func main() {
 	drone.ThrowTakeOff()
 	start_time := time.Now()
 	time.Sleep(3 * time.Second)
+	ctrlMssgLn("Trow Takeoff")
 	drone.ThrowTakeOff()
 	time.Sleep(3 * time.Second)
+	ctrlMssgLn("3sec after Trow Takeoff END. Check if Flying?")
 	fmt.Println("[DRONE] Ready to Fly!")
 
 	if drone.GetFlightData().Flying {
@@ -75,7 +81,8 @@ func main() {
 		// not flying so let's takeOff
 		log.Printf("[CTRL] Normal TakeOff in 3 seconds...\n")
 		time.Sleep(3 * time.Second)
-		fmt.Println("CTRL >>> Cleared For Takeoff")
+		log.Printf("CTRL: Did not perform Throw Takeoff... \n")
+		fmt.Println("CTRL >>> Takeoff")
 		drone.TakeOff()
 		log.Printf("[CTRL] Take-off!!! check if Airbourne?...\n")
 		time.Sleep(1 * time.Second)
