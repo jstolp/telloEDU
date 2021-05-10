@@ -10,6 +10,7 @@ import (
 )
 
 func main() {
+    log.Printf("Try Connection To Tello %v", "PH-JSX-T1 Ultra-Light")
 	drone := new(tello.Tello)
 	err := drone.ControlConnectDefault()
 	if err != nil {
@@ -17,6 +18,7 @@ func main() {
 	}
 
 	flying := false
+	log.Printf("CONNECTED TO:  %v", "PH-JSX-T1 Ultra-Light")
 	fmt.Println("I made connection with the Drone")
 	fmt.Printf("[CTRL] %v Percent BATTERY, Checking... \n", drone.GetFlightData().BatteryPercentage)
 	time.Sleep(5 * time.Second)
@@ -43,6 +45,7 @@ func main() {
 	fmt.Println("[DRONE] Cleared for take off 1...")
 	time.Sleep(time.Second)
 	fmt.Println("[CTRL] Throwing Take off? you have 3 sec...")
+	log.Printf("CTRL: Trow TakeOff \n")
 	drone.ThrowTakeOff()
 	time.Sleep(3 * time.Second)
 	drone.ThrowTakeOff()
@@ -58,6 +61,7 @@ func main() {
 	} else {
 		flying = false
 		// not flying so let's takeOff
+		log.Printf("CTRL: Did not perform Throw Takeoff... \n")
 		fmt.Println("CTRL >>> Takeoff")
 		drone.TakeOff()
 		fmt.Println("[DRONE] TakeOff")
