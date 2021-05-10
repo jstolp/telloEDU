@@ -9,7 +9,14 @@ import (
 	"github.com/SMerrony/tello"
 )
 
+const broadcast_addr = "255.255.255.255"
+
+func ctrlMssgLn(message string) {
+	log.Printf("[CTRL] %v \n", message)
+}
+
 func main() {
+	log.Printf("Trying to connect... to PH-JSX-TB-Tello1")
 	drone := new(tello.Tello)
 	err := drone.ControlConnectDefault()
 	if err != nil {
@@ -17,7 +24,7 @@ func main() {
 	}
 
 	flying := false
-	fmt.Println("I made connection with the Drone")
+	ctrlMssgLn("Connected with Drone.")
 	fmt.Printf("[CTRL] %v Percent BATTERY, Checking... \n", drone.GetFlightData().BatteryPercentage)
 	time.Sleep(5 * time.Second)
 	//fmt.Printf("SSID: %s\n", drone.GetFlightData().SSID)
@@ -34,7 +41,12 @@ func main() {
 		fmt.Printf("[CTRL] PH-JSX-Tello1... with %v battery. Cleared for takeOff in 3 sec. \n", drone.GetFlightData().BatteryPercentage)
 		fmt.Println("StartTime: ", time.Now().Format(time.RFC3339Nano))
 		fmt.Printf("nSpeed? %v\n", drone.GetFlightData().NorthSpeed)
+		log.Printf("3 seconds wait to Throw TakeOff... \n")
 	}
+
+	ctrlMssgLn("Pre-Flight Checks...")
+	// drone.TakeOff() and...
+	// emergecy stop after 50 ms?
 
 	fmt.Println("[DRONE] Cleared for take off 3...")
 	time.Sleep(time.Second)
@@ -43,33 +55,41 @@ func main() {
 	fmt.Println("[DRONE] Cleared for take off 1...")
 	time.Sleep(time.Second)
 	fmt.Println("[CTRL] Throwing Take off? you have 3 sec...")
+	log.Printf("[CTRL] ThrowTakeOff 3 sec...\n")
 	drone.ThrowTakeOff()
+	start_time := time.Now()
 	time.Sleep(3 * time.Second)
 	drone.ThrowTakeOff()
 	time.Sleep(3 * time.Second)
 	fmt.Println("[DRONE] Ready to Fly!")
-	start_time := time.Now()
-	// Check if drone is flying...
 
 	if drone.GetFlightData().Flying {
+		log.Printf("[CTRL] TB-Tello == GO. CONFIRMED AIRBORNE!!! \n")
+		start_time = time.Now()
+		// Check if drone is flying...
 		fmt.Println("[CTRL] PH-JSX-Tello1 is Airbone!")
 		fmt.Println("[DRONE] Confirmed")
 		flying = true
 	} else {
 		flying = false
 		// not flying so let's takeOff
-		fmt.Println("CTRL >>> Takeoff")
+		log.Printf("[CTRL] Normal TakeOff in 3 seconds...\n")
+		time.Sleep(3 * time.Second)
+		fmt.Println("CTRL >>> Cleared For Takeoff")
 		drone.TakeOff()
+		log.Printf("[CTRL] Take-off!!! check if Airbourne?...\n")
+		time.Sleep(1 * time.Second)
+		start_time = time.Now()
 		fmt.Println("[DRONE] TakeOff")
 	}
 
-	fmt.Println("[CTRL] Sleep 2")
-	time.Sleep(2 * time.Second)
-	fmt.Println("[DRONE] Am i Airborne?")
+	fmt.Println("[CTRL] Sleep 1")
+	time.Sleep(1 * time.Second)
 	fmt.Println("[CTRL] Tower, is PH-JSX-Tello1 airborne?")
 
 	if drone.GetFlightData().Flying || flying {
 		flying = true
+		log.Printf("[CTRL] AIRBORNE! Confirmed Normal Take-off")
 		fmt.Println("[DRONE] TWR, PH-JSX-Tello 1 airborne!")
 		fmt.Println("[CRTL] PH-JSX-Tello1 Contact Departure")
 		fmt.Println("[DRONE] PH-JSX-Tello1, Roger, Wilco!")
@@ -77,6 +97,11 @@ func main() {
 		fmt.Println("[CRTL] PH-JSX-Tello1 Abort Flight")
 		log.Fatal("expected to be airborne...")
 	}
+
+	fmt.Println("[CTRL] Sleep 1")
+	time.Sleep(1 * time.Second)
+	fmt.Println("[CTRL] PH-JSX-Tello1, CHECK MISSION PAD 1/3.")
+	drone.Anticlockwise()
 
 	fmt.Println("[DRONE] increate to FL 10")
 	drone.AutoFlyToHeight(5)

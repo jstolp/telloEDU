@@ -3,5 +3,5 @@ module github.com/jstolp/telloEdu
 go 1.16
 
 require (
-	github.com/SMerrony/tello v0.9.3
+	github.com/jstolp/tello v0.9.5
 )
