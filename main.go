@@ -4,20 +4,102 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"os/signal"
+	"syscall"
 	"time"
-
-	"github.com/SMerrony/tello"
 )
 
-const broadcast_addr = "255.255.255.255"
+var groundOnline bool = true
+var towerOnline bool = false
+var droneOnline bool = false
 
 func ctrlMssgLn(message string) {
 	log.Printf("[CTRL] %v \n", message)
 }
 
+// Registered
+func init() {
+	groundOnline = true
+	c := make(chan os.Signal)
+	signal.Notify(c, os.Interrupt, syscall.SIGTERM)
+	go func() {
+		<-c
+		fmt.Println("[CTRL] Received SIGTERM from User... Running cleanup.")
+		// Run Cleanup
+		groundOnline = false
+		fmt.Println("[CTRL] Ground Offline. End of Service. Goodbye!")
+		os.Exit(0)
+	}()
+}
+
 func main() {
+
+	if !groundOnline {
+		fmt.Printf("ERROR ground is not online (misconfig?)")
+		os.Exit(1)
+	}
+
 	log.Printf("Try Connection To Tello %v", "PH-JSX-T1 Ultra-Light")
-	drone := new(tello.Tello)
+
+	// Create logger
+	l := log.New(log.Writer(), log.Prefix(), log.Flags())
+
+	// Create worker
+	w := NewWorker(WorkerOptions{Logger: l})
+
+	// Create the drone
+	d := New(l)
+
+	// Handle signals
+	w.HandleSignals(TermSignalHandler(func() {
+		// Make sure to land on term signal
+		if err := d.Land(); err != nil {
+			l.Println(fmt.Errorf("GRND: landing failed: %w", err))
+			return
+		}
+	}))
+
+	// NO VIDEO!
+
+	// Handle take off event
+	d.On(TakeOffEvent, func(interface{}) { ctrlMssgLn("PH-JSX-Tello 1 airborne") })
+
+	// Start the drone
+	if err := d.Start(); err != nil {
+		l.Println(fmt.Errorf("GRND: PH-JSX unreachable: %w", err))
+		return
+	}
+	defer d.Close()
+
+	// Execute in a task
+	w.NewTask().Do(func() {
+		// DO NOT Start video
+		ctrlMssgLn("Pre-Flight Checks... DONE!")
+
+		ctrlMssgLn("PH-JSX: Here is your flight plan...")
+
+		// Take off
+		//if err := d.TakeOff(); err != nil {
+		//l.Println(fmt.Errorf("main: taking off failed: %w", err))
+		//return
+		//}
+
+		// Log state
+		l.Printf("DRONE: state is: %+v\n", d.State())
+
+		// Stop worker
+		w.Stop()
+	})
+	fmt.Println("Start Main for loop. at 5 hrz...")
+	for {
+		time.Sleep(5 * time.Millisecond)
+	}
+}
+
+/*
+func backupOFmain() {
+	log.Printf("Try Connection To Tello %v", "PH-JSX-T1 Ultra-Light")
+	drone := new(jtello.Tello)
 	err := drone.ControlConnectDefault()
 	if err != nil {
 		log.Fatalf("%v", err)
@@ -49,9 +131,6 @@ func main() {
 	}
 
 	ctrlMssgLn("Pre-Flight Checks...")
-	// drone.TakeOff() and...
-	// emergecy stop after 50 ms?
-
 	fmt.Println("[DRONE] Cleared for take off 3...")
 	time.Sleep(time.Second)
 	fmt.Println("[DRONE] Cleared for take off 2...")
@@ -108,7 +187,6 @@ func main() {
 	fmt.Println("[CTRL] Sleep 1")
 	time.Sleep(1 * time.Second)
 	fmt.Println("[CTRL] PH-JSX-Tello1, CHECK MISSION PAD 1/3.")
-	drone.Anticlockwise()
 
 	fmt.Println("[DRONE] increate to FL 10")
 	drone.AutoFlyToHeight(5)
@@ -194,3 +272,4 @@ func main() {
 	}
 	os.Exit(0)
 }
+*/
