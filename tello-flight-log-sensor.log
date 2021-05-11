@@ -1,0 +1,125 @@
+
+\\\github.com\jstolp\telloEDU>telloEdu.exe
+ctrl2021/05/11 20:04:05 jworker: starting...
+[[SYS]] Init READY for intterupts!
+2021/05/11 20:04:05 .5709 [GRND]: ONLINE.
+2021/05/11 20:04:05 .5709 [GRND]: Checking Drones...
+2021/05/11 20:04:05 .5714 [GRND]: Try Connection To Tello  Go-routine 1sec PH-JSX-T1 Ultra-Light
+2021/05/11 20:04:05 .5714 [GRND]: Connected To Drone Drones...
+ctrl: sending cmd command
+jtello: received resp 'ok'2021/05/11 20:04:05 .5846 [GRND]: PH_JSX seen on ground
+2021/05/11 20:04:05 .5846 [GRND]: Ground is online.
+2021/05/11 20:04:05 .5849 [T0wr]: Tower is starting up...
+Start Main for loop. at 1500 hrz...
+2021/05/11 20:04:05 .5849 [HELI]: PH-JSX, Requesting ATIS Information!
+2021/05/11 20:04:05 .5854 [GRND]: Request State
+2021/05/11 20:04:05 DRONE: state is: {Mission:{ID:0 X:0 Y:0 Z:0} Acceleration:{X:0 Y:0 Z:0} Attitude:{Pitch:0 Roll:0 Yaw:0} Barometer:0 Battery:0 FlightDistance:0 FlightTime:0 Height:0 HighestTemperature:0 LowestTemperature:0 Speed:{X:0 Y:0 Z:0}}
+ctrl: sending cmd mon
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:62;tof:6553;h:0;bat:38;baro:68.22;time:0;agx:0.00;agy:-9.00;agz:-1002.00;
+jtello: received resp 'ok'2021/05/11 20:04:05 .6339 [HELI]: PH-JSX, READY FOR MISSION!
+2021/05/11 20:04:05 .6339 [GRND]: Request State 3
+2021/05/11 20:04:05 DRONE: state is: {Mission:{ID:0 X:0 Y:0 Z:0} Acceleration:{X:0 Y:0 Z:0} Attitude:{Pitch:0 Roll:0 Yaw:0} Barometer:0 Battery:0 FlightDistance:0 FlightTime:0 Height:0 HighestTemperature:0 LowestTemperature:0 Speed:{X:0 Y:0 Z:0}}
+2021/05/11 20:04:05 .6349 [T0wr]: PH-JSX: Cleared for take-off...
+sleep for 10 seconds
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:62;tof:6553;h:0;bat:38;baro:68.26;time:0;agx:0.00;agy:-5.00;agz:-1006.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:61;tof:6553;h:0;bat:38;baro:68.24;time:0;agx:0.00;agy:-7.00;agz:-1004.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:61;tof:6553;h:0;bat:38;baro:68.24;time:0;agx:0.00;agy:-9.00;agz:-1001.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:61;tof:6553;h:0;bat:38;baro:68.22;time:0;agx:0.00;agy:-7.00;agz:-1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:61;tof:6553;h:0;bat:38;baro:68.27;time:0;agx:0.00;agy:-10.00;agz:-1002.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:61;tof:6553;h:0;bat:38;baro:68.24;time:0;agx:2.00;agy:-6.00;agz:-1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:61;tof:6553;h:0;bat:38;baro:68.22;time:0;agx:0.00;agy:-9.00;agz:-1003.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:61;tof:6553;h:0;bat:38;baro:68.21;time:0;agx:1.00;agy:-5.00;agz:-1001.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:61;tof:6553;h:0;bat:38;baro:68.24;time:0;agx:0.00;agy:-7.00;agz:-1001.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:61;tof:6553;h:0;bat:38;baro:68.26;time:0;agx:0.00;agy:-6.00;agz:-1001.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:61;tof:6553;h:0;bat:38;baro:68.28;time:0;agx:0.00;agy:-8.00;agz:-999.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:62;tof:6553;h:0;bat:38;baro:68.27;time:0;agx:1.00;agy:-7.00;agz:-1003.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:62;tof:6553;h:0;bat:38;baro:68.29;time:0;agx:-1.00;agy:-8.00;agz:-1002.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:62;tof:6553;h:0;bat:38;baro:68.26;time:0;agx:2.00;agy:-7.00;agz:-1001.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:62;tof:6553;h:0;bat:38;baro:68.28;time:0;agx:2.00;agy:-5.00;agz:-1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:62;tof:6553;h:0;bat:38;baro:68.24;time:0;agx:0.00;agy:-9.00;agz:-1003.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:62;tof:6553;h:0;bat:38;baro:68.24;time:0;agx:0.00;agy:-8.00;agz:-1003.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:62;tof:6553;h:0;bat:38;baro:68.27;time:0;agx:0.00;agy:-8.00;agz:-1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:62;tof:6553;h:0;bat:37;baro:68.28;time:0;agx:0.00;agy:-8.00;agz:-1002.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:62;tof:6553;h:0;bat:37;baro:68.24;time:0;agx:1.00;agy:-6.00;agz:-997.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:60;temph:62;tof:6553;h:0;bat:37;baro:68.27;time:0;agx:1.00;agy:-6.00;agz:-998.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:6553;h:0;bat:37;baro:68.23;time:0;agx:2.00;agy:-7.00;agz:-999.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:6553;h:0;bat:37;baro:68.27;time:0;agx:0.00;agy:-7.00;agz:-1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:6553;h:0;bat:37;baro:68.28;time:0;agx:0.00;agy:-7.00;agz:-1002.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:6553;h:0;bat:37;baro:68.24;time:0;agx:-42.00;agy:117.00;agz:-1003.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:0;yaw:-1;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:6553;h:0;bat:37;baro:68.21;time:0;agx:-1.00;agy:-8.00;agz:-1006.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:3;roll:-2;yaw:-2;vgx:1;vgy:0;vgz:-1;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.27;time:0;agx:89.00;agy:-40.00;agz:-1190.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:14;roll:-14;yaw:-30;vgx:1;vgy:0;vgz:-2;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.28;time:0;agx:293.00;agy:262.00;agz:-959.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:14;roll:-36;yaw:-58;vgx:0;vgy:0;vgz:-2;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.33;time:0;agx:396.00;agy:305.00;agz:-893.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:16;roll:-49;yaw:-66;vgx:0;vgy:0;vgz:-1;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.36;time:0;agx:212.00;agy:550.00;agz:-605.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:13;roll:-60;yaw:-76;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.37;time:0;agx:223.00;agy:755.00;agz:-552.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:9;roll:-66;yaw:-81;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.35;time:0;agx:161.00;agy:842.00;agz:-385.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:6;roll:-68;yaw:-84;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.35;time:0;agx:149.00;agy:1004.00;agz:-288.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:3;roll:-70;yaw:-87;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.30;time:0;agx:161.00;agy:960.00;agz:-365.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:2;roll:-75;yaw:-91;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.36;time:0;agx:-27.00;agy:972.00;agz:-197.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:-81;yaw:-95;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.37;time:0;agx:-29.00;agy:1011.00;agz:-7.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:-86;yaw:-100;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.33;time:0;agx:-23.00;agy:960.00;agz:-20.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:-94;yaw:-106;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.36;time:0;agx:-1.00;agy:1139.00;agz:127.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:-105;yaw:-116;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.36;time:0;agx:-10.00;agy:993.00;agz:170.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:1;roll:-111;yaw:-124;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.39;time:0;agx:69.00;agy:956.00;agz:332.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:2;roll:-121;yaw:-132;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.35;time:0;agx:22.00;agy:976.00;agz:490.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:4;roll:-132;yaw:-137;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.31;time:0;agx:117.00;agy:684.00;agz:541.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:4;roll:-143;yaw:-145;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.36;time:0;agx:-15.00;agy:578.00;agz:653.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:6;roll:-144;yaw:-152;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.38;time:0;agx:-15.00;agy:636.00;agz:721.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:9;roll:-151;yaw:-157;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.38;time:0;agx:156.00;agy:528.00;agz:812.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:8;roll:-162;yaw:-163;vgx:0;vgy:0;vgz:1;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.33;time:0;agx:154.00;agy:302.00;agz:785.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:7;roll:-174;yaw:-169;vgx:0;vgy:0;vgz:2;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.26;time:0;agx:194.00;agy:262.00;agz:962.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:7;roll:-178;yaw:-173;vgx:0;vgy:0;vgz:1;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.28;time:0;agx:120.00;agy:156.00;agz:1024.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:8;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:10;h:0;bat:37;baro:68.27;time:0;agx:126.00;agy:37.00;agz:1128.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:7;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:33;h:0;bat:37;baro:68.26;time:0;agx:92.00;agy:-74.00;agz:1037.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:5;roll:-179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:61;temph:62;tof:76;h:0;bat:37;baro:68.23;time:0;agx:74.00;agy:-95.00;agz:1082.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:2;roll:-179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:121;h:0;bat:37;baro:68.22;time:0;agx:-23.00;agy:43.00;agz:944.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:144;h:0;bat:37;baro:68.29;time:0;agx:-53.00;agy:63.00;agz:1015.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:142;h:0;bat:37;baro:68.29;time:0;agx:-9.00;agy:-1.00;agz:999.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:114;h:0;bat:37;baro:68.26;time:0;agx:6.00;agy:-6.00;agz:1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:157;h:0;bat:37;baro:68.27;time:0;agx:-8.00;agy:-3.00;agz:1001.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:183;h:0;bat:37;baro:68.26;time:0;agx:-9.00;agy:-6.00;agz:1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.30;time:0;agx:-9.00;agy:-5.00;agz:1001.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:183;h:0;bat:37;baro:68.25;time:0;agx:-7.00;agy:-4.00;agz:1001.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.29;time:0;agx:-9.00;agy:-4.00;agz:1002.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.28;time:0;agx:-7.00;agy:-4.00;agz:1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.31;time:0;agx:-8.00;agy:-5.00;agz:1001.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.31;time:0;agx:-8.00;agy:-3.00;agz:1004.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:183;h:0;bat:37;baro:68.28;time:0;agx:-8.00;agy:-3.00;agz:1002.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.32;time:0;agx:-9.00;agy:-3.00;agz:999.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.36;time:0;agx:-9.00;agy:-3.00;agz:999.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:183;h:0;bat:37;baro:68.29;time:0;agx:-7.00;agy:-4.00;agz:1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.28;time:0;agx:-7.00;agy:-7.00;agz:1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.30;time:0;agx:-7.00;agy:-4.00;agz:1001.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.26;time:0;agx:-11.00;agy:-4.00;agz:1002.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.30;time:0;agx:-10.00;agy:-3.00;agz:998.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.29;time:0;agx:-10.00;agy:-4.00;agz:1002.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.33;time:0;agx:-6.00;agy:-6.00;agz:1003.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:183;h:0;bat:37;baro:68.29;time:0;agx:-8.00;agy:-8.00;agz:1006.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.31;time:0;agx:-3.00;agy:-7.00;agz:1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.31;time:0;agx:-9.00;agy:-5.00;agz:1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:183;h:0;bat:37;baro:68.30;time:0;agx:-6.00;agy:-5.00;agz:999.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:183;h:0;bat:37;baro:68.31;time:0;agx:-6.00;agy:-7.00;agz:1001.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:184;h:0;bat:37;baro:68.33;time:0;agx:-11.00;agy:-4.00;agz:1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:183;h:0;bat:37;baro:68.28;time:0;agx:-5.00;agy:0.00;agz:994.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:62;temph:63;tof:183;h:0;bat:37;baro:68.29;time:0;agx:-8.00;agy:-9.00;agz:1005.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:61;temph:63;tof:183;h:0;bat:37;baro:68.35;time:0;agx:-6.00;agy:-7.00;agz:1001.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:61;temph:63;tof:183;h:0;bat:37;baro:68.34;time:0;agx:-14.00;agy:0.00;agz:994.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:61;temph:63;tof:181;h:0;bat:37;baro:68.31;time:0;agx:-7.00;agy:-8.00;agz:1003.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-174;vgx:0;vgy:0;vgz:0;templ:61;temph:63;tof:10;h:0;bat:37;baro:68.32;time:0;agx:-8.00;agy:1.00;agz:996.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-175;vgx:0;vgy:0;vgz:0;templ:61;temph:63;tof:10;h:0;bat:37;baro:68.27;time:0;agx:-11.00;agy:-7.00;agz:1000.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:0;roll:179;yaw:-178;vgx:0;vgy:0;vgz:0;templ:61;temph:63;tof:10;h:0;bat:37;baro:68.36;time:0;agx:25.00;agy:22.00;agz:996.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:9;roll:171;yaw:172;vgx:0;vgy:0;vgz:-5;templ:61;temph:63;tof:10;h:0;bat:37;baro:68.37;time:0;agx:52.00;agy:-185.00;agz:999.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:32;roll:174;yaw:175;vgx:0;vgy:0;vgz:-10;templ:61;temph:63;tof:10;h:0;bat:37;baro:68.54;time:0;agx:6.00;agy:-369.00;agz:1665.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:62;roll:165;yaw:166;vgx:0;vgy:0;vgz:-13;templ:61;temph:63;tof:10;h:20;bat:37;baro:68.67;time:0;agx:42.00;agy:-358.00;agz:1572.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:80;roll:107;yaw:114;vgx:0;vgy:0;vgz:-14;templ:61;temph:63;tof:10;h:30;bat:37;baro:68.79;time:0;agx:1363.00;agy:-82.00;agz:153.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:63;roll:56;yaw:77;vgx:0;vgy:0;vgz:-16;templ:62;temph:64;tof:10;h:40;bat:37;baro:69.03;time:0;agx:957.00;agy:26.00;agz:-478.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:43;roll:44;yaw:83;vgx:0;vgy:0;vgz:-15;templ:62;temph:64;tof:10;h:60;bat:37;baro:69.09;time:0;agx:476.00;agy:-262.00;agz:-666.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:24;roll:34;yaw:94;vgx:0;vgy:0;vgz:-13;templ:62;temph:64;tof:10;h:80;bat:37;baro:69.23;time:0;agx:146.00;agy:-31.00;agz:-803.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:16;roll:29;yaw:103;vgx:0;vgy:0;vgz:-10;templ:62;temph:64;tof:10;h:90;bat:37;baro:69.32;time:0;agx:41.00;agy:-473.00;agz:-636.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:13;roll:24;yaw:113;vgx:0;vgy:0;vgz:-8;templ:62;temph:64;tof:10;h:100;bat:37;baro:69.39;time:0;agx:119.00;agy:-391.00;agz:-753.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:13;roll:21;yaw:120;vgx:0;vgy:0;vgz:-5;templ:62;temph:64;tof:10;h:100;bat:37;baro:69.48;time:0;agx:396.00;agy:-108.00;agz:-754.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:12;roll:19;yaw:124;vgx:0;vgy:0;vgz:-3;templ:62;temph:64;tof:10;h:110;bat:37;baro:69.54;time:0;agx:108.00;agy:-243.00;agz:-801.00;
+rawStatemid:-1;x:-100;y:-100;z:-100;mpry:-1,-1,-1;pitch:9;roll:18;yaw:129;vgx:0;vgy:0;vgz:-1;templ:62;temph:64;tof:10;h:110;bat:37;baro:69.56;time:0;agx:91.00;agy:-268.00;agz:-890.00;
+
+\\\github.com\jstolp\telloEDU>
+
