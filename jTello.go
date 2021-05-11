@@ -607,6 +607,19 @@ func (d *Drone) Flip(x string) (err error) {
 }
 
 // Go makes Tello fly to x y z in speed (cm/s)
+func (d *Drone) GoMissionPad(x, y, z, speed int, pad int) (err error) {	
+	if err = d.sendCmd(&cmd{
+		cmd:     fmt.Sprintf("go %d %d %d %d m%d", x, y, z, speed, pad),
+		h:       defaultRespHandler,
+		timeout: time.Minute,
+	}); err != nil {
+		err = fmt.Errorf("jtello: sending go mission cmd failed: %w", err)
+		return
+	}
+	return
+}
+
+// Go makes Tello fly to x y z in speed (cm/s)
 func (d *Drone) Go(x, y, z, speed int) (err error) {
 	// Send cmd
 	if err = d.sendCmd(&cmd{
@@ -727,6 +740,34 @@ func (d *Drone) Speed() (x int, err error) {
 		timeout: defaultTimeout,
 	}); err != nil {
 		err = fmt.Errorf("jtello: sending speed? cmd failed: %w", err)
+		return
+	}
+	return
+}
+
+// Mission Mode OFF (USE ILS / VP) ia Mission Pads (tello edu)
+func (d *Drone) MissionModeOn() (err error) { 
+	// Send cmd
+	if err = d.sendCmd(&cmd{
+		cmd:     "mon",
+		h:       defaultRespHandler, // mission handle?
+		timeout: 4 * time.Second,
+	}); err != nil {
+		err = fmt.Errorf("jtello: sending mON cmd failed: %w", err)
+		return
+	}
+	return
+}
+
+// Mission Mode OFF (USE ILS / VP) via Mission Pads (tello edu)
+func (d *Drone) MissionModeOff() (err error) {
+	// Send cmd
+	if err = d.sendCmd(&cmd{
+		cmd:     "moff",
+		h:       defaultRespHandler, // mission handler?
+		timeout: 4 * time.Second,
+	}); err != nil {
+		err = fmt.Errorf("jtello: sending mOFF cmd failed: %w", err)
 		return
 	}
 	return
